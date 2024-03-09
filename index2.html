@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sniglet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de Videojuegos</title>
+</head>
+<body>
+
+
+    <div class="Todo1">
+        <h1>Preguntas de selección múltiple:</h1>
+    <form >
+        
+        <p>
+            1. ¿Cuál de los siguientes es un famoso personaje de videojuegos?
+
+
+            <p>Elija su marca de Carros favorita:</p>
+
+        <div class="Rad">
+            <input type="radio"  id="miRadio" name="Marca">Marca 1<br>
+        </div>
+
+        <div class="Rad">
+            <input type="radio" name="Marca">Marca 2<br>
+        </div>
+            
+        <div class="Rad">
+            <input type="radio" name="Marca">Marca 3<br>
+        </div>
+
+        <div class="Rad">
+            <input type="radio" name="Marca">Marca 4<br>
+        </div>
+
+            <br>
+            
+        </p>
+        <!-- Restricción aquí para no enviar si no se ha contestado -->
+        <p>
+            2. ¿Qué género de videojuegos es conocido por su enfoque en la estrategia y la toma de decisiones?
+            <br>
+            <div class="Rad">
+            <input type="radio" id="p2a" name="pregunta2" value="a">
+            <label for="p2a">Acción</label><br>
+        </div>
+        <div class="Rad">
+            <input type="radio" id="p2b" name="pregunta2" value="b">
+            <label for="p2b">Aventura</label><br>
+        </div>
+        <div class="Rad">
+            <input type="radio" id="p2c" name="pregunta2" value="c">
+            <label for="p2c">Estrategia</label><br>
+        </div>
+
+        </p>
+        <!-- Restricción aquí para no enviar si no se ha contestado -->
+        <p>
+            3. ¿Cuál de las siguientes consolas es fabricada por Sony?
+            <br>
+
+            <div class="Rad">
+            <input type="radio" id="p3a" name="pregunta3" value="a">
+            <label for="p3a">Xbox</label><br>
+            </div>
+            <div class="Rad">
+            <input type="radio" id="p3b" name="pregunta3" value="b">
+            <label for="p3b">PlayStation</label><br>
+            </div>
+
+            <div class="Rad">
+            <input type="radio" id="p3c" name="pregunta3" value="c">
+            <label for="p3c">Nintendo Switch</label><br>
+            </div>
+
+        </p>
+        <!-- Restricción aquí para no enviar si no se ha contestado -->
+
+        <h2>Preguntas abiertas:</h2>
+        <p>
+            1. ¿Cuál es tu videojuego favorito y por qué?
+            <br>
+            <textarea id="pregunta4" name="pregunta4" required required oninvalid="this.setCustomValidit('Por favor ingrese su Profesion')" placeholder="Cuentame malparido :D"></textarea>
+        </p>
+        <!-- Restricción aquí para no enviar si no se ha contestado -->
+        <p>
+            2. ¿Qué crees que hace que un videojuego sea exitoso?
+            <br>
+            <textarea id="pregunta5" name="pregunta5"  required required oninvalid="this.setCustomValidit('Por favor ingrese su Profesion')" placeholder="AAAAAAAAAAAAAA"></textarea>
+        </p>
+        <!-- Restricción aquí para no enviar si no se ha contestado -->
+        <p>
+            3. ¿Cómo crees que los videojuegos han evolucionado a lo largo del tiempo?
+            <br>
+            <textarea id="pregunta6" name="pregunta6" required required oninvalid="this.setCustomValidit('Por favor ingrese su Profesion')" placeholder="Explicate :D triplehpta"></textarea>
+        </p>
+        <!-- Restricción aquí para no enviar si no se ha contestado -->
+
+        <button type="submit">Enviar respuestas</button>
+        <button type="submit" class="a" formaction="../Formulario web/index.html">Anterior</button>
+    </form>
+</div>
+</body>
+</html>

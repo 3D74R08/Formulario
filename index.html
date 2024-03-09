@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="es"> 
+        <head>
+
+            <title>Formulario Encuesta</title>
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sniglet"/>
+            <link rel="stylesheet" href="style.css" >
+            <meta charset="UTF-8">
+
+            <script>
+                function soloLetras(event) {
+                  var inputValue = event.charCode;
+                  if(!(inputValue >= 65 && inputValue <= 90) && !(inputValue >= 97 && inputValue <= 122)) { 
+                    event.preventDefault();
+                  }
+                }
+                </script>
+
+
+
+        </head>
+    <body>
+        
+    <div class="Todo">
+
+        <h1>FORMULARIO WEB</h1>
+            
+        <h3>INGRESA TUS DATOS BASICOS:</h3>
+
+        <section class="caja_1">
+
+
+
+<div>
+
+    <form action="xxx.html" method="post">
+
+
+            <input class="Reg" type="text" pattern="[A-Za-z\s]+" title="Solo se permiten letras" name="Nombres" size="30" placeholder="Nombre" 
+            required oninvalid="this.setCustomValidity('Por favor ingrese su Nombre')"><br>
+
+
+            <input class="Reg" type="text" name="Apellidos" size="30" placeholder="Apellidos" required oninvalid="this.setCustomValidit('Por favor ingrese su Apellidos')"><br>
+
+            <input class="Reg" type="text" name="Direccion" size="30" placeholder="Direccion" required oninvalid="this.setCustomValidit('Por favor ingrese su Direccion')">
+            <br>
+
+</div>
+        
+
+            <input class="Reg" type="number" name="Edad" size="30" placeholder="Edad" required oninvalid="this.setCustomValidit('Por favor ingrese su Edad')"><br>
+
+            <input class="Reg" type="number" name="Telefono" size="20" placeholder="Telefono"  required oninvalid="this.setCustomValidit('Por favor ingrese su Telefono')"><br>
+
+            <input class="Reg"type="number" name="Celular" size="30" placeholder="Celular"  required oninvalid="this.setCustomValidit('Por favor ingrese su Celular')"><br>
+
+            <input class="Reg" type="text" name="Profesion" size="30" placeholder="Profesion"  required oninvalid="this.setCustomValidit('Por favor ingrese su Profesion')"><br>
+            <div>
+                <select class="Reg">
+                    <option class="Reg" value="Sexo" placeholder="Sexo">Seleccione su sexo</option>
+                    <option class="Reg" value="Hombre" placeholder="Sexo">Mujer</option>
+                    <option class="Reg" value="Mujer" placeholder="Sexo">Hombre</option>
+                </select><br>
+            </div>
+
+        </section>
+        <button type="submit" class="a" formaction="../Formulario web/index2.html">Siguiente</button>
+        </form>
+    <br>
+        
+</div>
+</body>
+</html>
